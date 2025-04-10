@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Ainin Syafrina</title>
+  <title>Ainin Syafrina</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="favicon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -27,6 +27,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <link rel="shortcut icon" href="img\favicon.png" type="image/x-icon">
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -69,14 +70,83 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background d-flex align-items-center justify-content-center">
 
-      <img src="assets/img/profile-bg.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Ainin Syafrina</h2>
-        <p>I'm <span class="typed" data-typed-items="UI/UX Designer, Project Manager, Business Analyst, Software Tester">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      <div class="hero-bg">
+      <img src="assets/img/profile-bg.jpg" alt="Background Image" class="img-fluid" data-aos="fade-in">
       </div>
+
+      <div class="container text-center position-relative" data-aos="zoom-in" data-aos-delay="100">
+        <h1 class="hero-title" style="animation: fadeInDown 1.5s ease-out;">Ainin Syafrina</h1>
+        <p class="hero-subtitle" style="animation: fadeInUp 1.5s ease-out; animation-delay: 0.5s;">
+          I'm <span class="typed" data-typed-items="UI/UX Designer, Project Manager, Business Analyst, Software Tester"></span>
+        </p>
+        <div class="hero-buttons mt-4" style="animation: bounceIn 2s ease-out; animation-delay: 1s;">
+          <a href="#about" class="btn btn-modern btn-lg">Learn More</a>
+        </div>
+            </div>
+            
+            <style>
+        .btn-modern {
+          display: inline-block;
+          padding: 12px 30px;
+          font-size: 1rem;
+          font-weight: 500;
+          color: #fff;
+          background: linear-gradient(90deg, #6a11cb, #2575fc);
+          border: none;
+          border-radius: 50px;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 10px rgba(106, 17, 203, 0.3);
+        }
+
+        .btn-modern:hover {
+          background: linear-gradient(90deg, #2575fc, #6a11cb);
+          box-shadow: 0 6px 15px rgba(106, 17, 203, 0.5);
+          transform: translateY(-3px);
+        }
+
+        @keyframes fadeInDown {
+          from {
+            opacity: 0;
+            transform: translateY(-50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes bounceIn {
+          0% {
+            opacity: 0;
+            transform: scale(0.3);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.05);
+          }
+          70% {
+            transform: scale(0.9);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+            </style>
 
     </section><!-- /Hero Section -->
 
@@ -96,14 +166,14 @@
             <img src="assets/img/profileimg2.jpg" alt="" class="img-fluid rounded-circle shadow-lg" data-aos="bounce-in" data-aos-duration="1500" data-aos-delay="500">
           </div>
 
-          <div class="col-lg-8 content">
+            <div class="col-lg-8 content">
             <p class="text-muted text-center">
               <em data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
                 Hi, I’m Ainin Syafrina, a passionate Software Engineering Student specializing in UI/UX design, project management, business analysis, and software testing.
               </em>
             </p>
             <p class="text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
-              I thrive on creating intuitive and user-friendly applications that enhance the digital experience. With hands-on experience in project management, business analysis, software testing, and MCDM-based AI systems, and educational software, I have worked on several projects like SportBotX, Cikgu Connect, Shape Hunter and more.
+              I am passionate about developing intuitive and user-friendly applications that elevate the digital experience. With practical experience in project management, business analysis, software testing, and Multi-Criteria Decision-Making (MCDM) AI systems, I have contributed to various projects, including SportBotX, Cikgu Connect, and Shape Hunter. My background also includes working on educational software solutions, enabling me to bridge the gap between technical implementation and user-centric design.
             </p>
           </div>
         </div>
@@ -126,7 +196,7 @@
               </li>
               <li>
                 <span class="text-muted">City:</span>
-                <span>Shah Alam, Selangor</span>
+                <span>Cyberjaya, Selangor</span>
               </li>
             </ul>
           </div>
@@ -173,51 +243,65 @@
 
         <div class="row skills-content skills-animation">
 
-          <div class="col-lg-6">
+            <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">70%</i></span>
+              <span class="skill"><span>HTML</span> <i class="val">55%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%; background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff6f91); box-shadow: 0 4px 10px rgba(255, 126, 95, 0.5); transition: width 0.5s ease;"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
               <span class="skill"><span>CSS</span> <i class="val">50%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background: linear-gradient(90deg, #6a11cb, #2575fc, #00c6ff); box-shadow: 0 4px 10px rgba(106, 17, 203, 0.5); transition: width 0.5s ease;"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
               <span class="skill"><span>JavaScript</span> <i class="val">50%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background: linear-gradient(90deg, #f7971e, #ffd200, #ff9a00); box-shadow: 0 4px 10px rgba(247, 151, 30, 0.5); transition: width 0.5s ease;"></div>
               </div>
             </div><!-- End Skills Item -->
 
-          </div>
+            <div class="progress">
+              <span class="skill"><span>MySQL</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%; background: linear-gradient(90deg, #43cea2, #185a9d, #2b5876); box-shadow: 0 4px 10px rgba(67, 206, 162, 0.5); transition: width 0.5s ease;"></div>
+              </div>
+            </div><!-- End Skills Item -->
 
-          <div class="col-lg-6">
+            </div>
+
+            <div class="col-lg-6">
 
             <div class="progress">
               <span class="skill"><span>PHP</span> <i class="val">50%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background: linear-gradient(90deg, #ff512f, #dd2476, #ff416c); box-shadow: 0 4px 10px rgba(255, 81, 47, 0.5); transition: width 0.5s ease;"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Figma</span> <i class="val">80%</i></span>
+              <span class="skill"><span>Figma</span> <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background: linear-gradient(90deg, #11998e, #38ef7d, #56ab2f); box-shadow: 0 4px 10px rgba(17, 153, 142, 0.5); transition: width 0.5s ease;"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Microsoft Office</span> <i class="val">85%</i></span>
+              <span class="skill"><span>Microsoft Office</span> <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fad0c4); box-shadow: 0 4px 10px rgba(255, 154, 158, 0.5); transition: width 0.5s ease;"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Flask</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background: linear-gradient(90deg, #8e2de2, #4a00e0, #6a11cb); box-shadow: 0 4px 10px rgba(142, 45, 226, 0.5); transition: width 0.5s ease;"></div>
               </div>
             </div><!-- End Skills Item -->
 
@@ -242,47 +326,51 @@
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 class="resume-title">Summary</h3>
 
             <div class="resume-item pb-0">
-              <h4>Ainin Syafrina</h4>
-              <p><em>Innovative and passionate Software Engineering Student specializing in UI/UX design, project management, business analysis, and software testing. </em></p>
-              <ul>
-                <li>Shah Alam, Selangor</li>
-                <li>+6012- 921 4161</li>
-                <li>aininsyafrina.work@gmail.com</li>
+              <h4 class="text-primary">Ainin Syafrina</h4>
+              <p><em class="text-muted">Innovative and passionate Software Engineering Student specializing in UI/UX design, project management, business analysis, and software testing.</em></p>
+              <ul class="list-unstyled">
+              <li><i class="bi bi-geo-alt-fill text-primary"></i> Cyberjaya, Selangor</li>
+              <li><i class="bi bi-telephone-fill text-primary"></i> +6012-921 4161</li>
+              <li><i class="bi bi-envelope-fill text-primary"></i> aininsyafrina.work@gmail.com</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div><!-- End Resume Item -->
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Bachelor of Software Engineering (Educational Software) with Honours</h4>
-              <h5>2021 - 2025</h5>
+              <h4 class="text-primary">Bachelor of Software Engineering (Educational Software) with Honours</h4>
+              <h5 class="text-muted">2021 - 2025</h5>
               <p><em>Universiti Pendidikan Sultan Idris, Perak</em></p>
-              <p> CGPA: 3.80</p>
-              <p> MUET: Band 4</p>
-            </div><!-- Edn Resume Item -->
+              <ul class="list-unstyled">
+              <li><i class="bi bi-award-fill text-primary"></i> CGPA: 3.80</li>
+              <li><i class="bi bi-chat-left-text-fill text-primary"></i> MUET: Band 4</li>
+              </ul>
+            </div><!-- End Resume Item -->
 
             <div class="resume-item">
-              <h4>Malaysian Higher Religious Certificate (STAM)</h4>
-              <h5>2018</h5>
+              <h4 class="text-primary">Malaysian Higher Religious Certificate (STAM)</h4>
+              <h5 class="text-muted">2018</h5>
               <p><em>Kulliah Al-Lughah Waddin As-Sultan Abu Bakar, Pahang</em></p>
-              <p>Grade: Jayyid</p>
-            </div><!-- Edn Resume Item -->
+              <ul class="list-unstyled">
+              <li><i class="bi bi-star-fill text-primary"></i> Grade: Jayyid</li>
+              </ul>
+            </div><!-- End Resume Item -->
 
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Experience</h3>
             <div class="resume-item">
-              <h4>Intern Project Management Office</h4>
-              <h5>Sept 2024 - Feb 2025</h5>
-              <p><em>Malaysia Digital Economy Corporation (MDEC), Cyberjaya, Malaysia </em></p>
-              <ul>
-                <li>Assisted in managing key documents such as TDD, URS, and wireframes, prepared reports, meeting minutes, and monitoring multiple projects to ensure documents timely delivery and aligned with project goals.</li>
-                <li>Supported project scheduling, tracked tasks and deadlines in Project Web, raised IT service tickets, and ensured timely project delivery. </li>
-                <li>Facilitated effective communication between project teams a vendor, track project progress, organized meetings, sent updates, reminders, and supported requirement gathering sessions.</li>
-                <li>Executed test cases and recorded expected results in test scripts to validate system functionality and ensure quality assurance as software tester.</li>
+              <h4 class="text-primary">Intern Project Management Office</h4>
+              <h5 class="text-muted">Sept 2024 - Feb 2025</h5>
+              <p><em>Malaysia Digital Economy Corporation (MDEC), Cyberjaya, Malaysia</em></p>
+              <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill text-primary"></i> Assisted in managing key documents such as TDD, URS, and wireframes, prepared reports, meeting minutes, and monitored multiple projects to ensure timely delivery and alignment with project goals.</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> Supported project scheduling, tracked tasks and deadlines in Project Web, raised IT service tickets, and ensured timely project delivery.</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> Facilitated effective communication between project teams and vendors, tracked project progress, organized meetings, sent updates, reminders, and supported requirement gathering sessions.</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> Executed test cases and recorded expected results in test scripts to validate system functionality and ensure quality assurance as a software tester.</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
@@ -326,8 +414,8 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
+              <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="App 2">
+              <div class="portfolio-info">
                   <h4>App 2</h4>
                   <p>SportBotX</p>
                   <a href="assets/img/portfolio/app2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
@@ -338,11 +426,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>App 3</h4>
                   <p>Cikgu Connect</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/app3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details3.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -355,6 +443,7 @@
       </div>
 
     </section><!-- /Portfolio Section -->
+
 
   </main>
 
