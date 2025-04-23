@@ -58,10 +58,10 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
       </ul>
     </nav>
 
@@ -99,47 +99,62 @@
                   "autoplay": {
                     "delay": 5000
                   },
-                  "slidesPerView": "auto",
+                  "slidesPerView": 1,
                   "pagination": {
                     "el": ".swiper-pagination",
                     "type": "bullets",
                     "clickable": true
+                  },
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
                   }
                 }
               </script>
 
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/app3.jpg" alt="Project Screenshot" class="img-fluid rounded">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app3.jpg" alt="Project Screenshot" class="img-fluid rounded">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app4.jpg" alt="Project Screenshot" class="img-fluid rounded">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app5.jpg" alt="Project Screenshot" class="img-fluid rounded">
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+
             </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
           </div>
 
           <div class="col-lg-4">
-          <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="mb-3">Project Information</h3>
-            <ul class="list-unstyled">
-              <li><strong>Category</strong>: Web Based System</li>
-              <li><strong>Type</strong>: Group Project</li>
-              <li><strong>Technologies:</strong> PHP, Laravel, MySQL</li>
-              <li><strong>Project date</strong>: 2024</li>
-            </ul>
-            <a href="https://github.com/ndhda/museowo-RPHSubmission" target="_blank" rel="noopener noreferrer" class="btn btn-primary d-flex align-items-center justify-content-center gap-2">
-              <i class="bi bi-box-arrow-up-right"></i> View on GitHub
-            </a>
-          </div>
-          <div class="portfolio-description mt-4" data-aos="fade-up" data-aos-delay="300">
-            <h2 class="mb-3">CIKGUCONNECT</h2>
-            <p>
-            <strong>CIKGUCONNECT</strong> is a lesson plan submission platform designed for teachers to streamline the process of drafting, submitting, and managing Rancangan Pengajaran Harian (RPH), or daily lesson plans. The system enables standardization, remote accessibility, and administrative oversight.
-            </p>
-            <p><strong>My Role:</strong></p>
-            <ul>
-              <li>Gathered user requirements</li>
-              <li>contributed to interface design</li>
-            </ul>
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="mb-3">Project Information</h3>
+              <ul class="list-unstyled">
+                <li><strong>Category</strong>: Web Based System</li>
+                <li><strong>Type</strong>: Group Project</li>
+                <li><strong>Technologies:</strong> PHP, Laravel, MySQL</li>
+                <li><strong>Project date</strong>: 2024</li>
+              </ul>
+              <a href="https://github.com/ndhda/museowo-RPHSubmission" target="_blank" rel="noopener noreferrer" class="btn btn-primary d-flex align-items-center justify-content-center gap-2">
+                <i class="bi bi-box-arrow-up-right"></i> View on GitHub
+              </a>
+            </div>
+            <div class="portfolio-description mt-4" data-aos="fade-up" data-aos-delay="300">
+              <h2 class="mb-3">CIKGUCONNECT</h2>
+              <p>
+                <strong>CIKGUCONNECT</strong> is a lesson plan submission platform designed for teachers to streamline the process of drafting, submitting, and managing Rancangan Pengajaran Harian (RPH), or daily lesson plans. The system enables standardization, remote accessibility, and administrative oversight.
+              </p>
+              <p><strong>My Role:</strong></p>
+              <ul>
+                <li>Gathered user requirements</li>
+                <li>Contributed to interface design</li>
+              </ul>
+            </div>
           </div>
 
         </div>
